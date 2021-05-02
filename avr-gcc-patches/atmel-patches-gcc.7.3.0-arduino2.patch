@@ -1559,7 +1559,7 @@ diff -ur gcc/gcc/config/avr/specs.h gcc-7.3.0-patched/gcc/config/avr/specs.h
 diff -ur gcc/gcc/config/avr/t-multilib gcc-7.3.0-patched/gcc/config/avr/t-multilib
 --- gcc/gcc/config/avr/t-multilib	2017-01-01 13:07:43.905435000 +0100
 +++ gcc-7.3.0-patched/gcc/config/avr/t-multilib	2018-11-29 16:08:58.825647392 +0100
-@@ -21,21 +21,24 @@
+@@ -21,21 +21,26 @@
  # along with GCC; see the file COPYING3.  If not see
  # <http://www.gnu.org/licenses/>.
  
@@ -1855,3 +1855,15 @@ diff -ur gcc/gcc/tree.h gcc-7.3.0-patched/gcc/tree.h
 Only in gcc/gmp: gmp-5.0.2
 Only in gcc/mpc: mpc-0.9
 Only in gcc/mpfr: mpfr-3.1.0
+diff -ur gcc/gcc/graphite.h gcc-7.3.0-patched/gcc/graphite.h
+--- gcc/gcc/graphite.h	2017-02-16 10:53:53.000000000 +0300
++++ gcc-7.3.0-patched/gcc/graphite.h	2021-04-01 10:07:36.000000000 +0300
+@@ -37,6 +37,8 @@
+ #include <isl/schedule.h>
+ #include <isl/ast_build.h>
+ #include <isl/schedule_node.h>
++#include <isl/space.h>
++#include <isl/id.h>
+ 
+ typedef struct poly_dr *poly_dr_p;
+ 
